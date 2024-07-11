@@ -22,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+```bash
+bundle install
+# bundle exec vite install
+
+bin/rails server
+
+# bin/rails generate controller Articles index --skip-routes
+```
