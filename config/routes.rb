@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   #
-  root to: 'home#index', as: :home
+  # root to: 'home#index', as: :home
 
   # mount Administrator::Engine => '/admin'
 end
