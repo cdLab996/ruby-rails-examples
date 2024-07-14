@@ -1,0 +1,33 @@
+{
+  "name": "ruby-rails-examples",
+  "type": "module",
+  "version": "0.0.1",
+  "author": "wudi",
+  "engines": {
+    "node": ">=18.20.3",
+    "pnpm": ">=9.1.1"
+  },
+  "scripts": {
+    "lint": "eslint ./src/**/*.{vue,ts,tsx}",
+    "lint:fix": "eslint ./src/**/*.{vue,ts,tsx} --fix",
+    "format": "prettier --check \"./src/**/*.{vue,ts,tsx}\"",
+    "format:fail": "prettier --check --write \"./src/**/*.{vue,ts,tsx}\" \"./vite.config.ts\""
+  },
+  "dependencies": {
+    "vue": "2.7.16",
+    "vue-router": "3.6.5",
+    "vuex": "3.6.2"
+  },
+  "devDependencies": {
+    "@cdlab996/eslint-config-vue2": "0.0.13",
+    "@cdlab996/prettier-config": "0.0.13",
+    "@types/node": "20.14.10",
+    "@vitejs/plugin-vue2": "2.3.1",
+    "@vitejs/plugin-vue2-jsx": "1.1.1",
+    "eslint": "8.57.0",
+    "prettier": "3.3.2",
+    "vite": "5.3.3",
+    "vite-plugin-full-reload": "1.2.0",
+    "vite-plugin-ruby": "5.0.0"
+  }
+}
