@@ -1,3 +1,8 @@
+/* eslint-disable no-console */
+import Vue from 'vue'
+import router from '../frontend/router/index'
+import App from '../frontend/App.vue'
+
 // To see this message, add the following to the `<head>` section in your
 // views/layouts/application.html.erb
 //
@@ -29,3 +34,19 @@ console.log(
 
 // Example: Import a stylesheet in app/frontend/index.css
 // import '~/index.css'
+
+// Vue.use(VueRouter);
+window.bus = new Vue()
+
+document.addEventListener('DOMContentLoaded', () => {
+  // window.WOOT = new Vue({
+  //   router,
+  //   components: { App },
+  //   template: '<App/>',
+  // }).$mount('#app')
+
+  new Vue({
+    router,
+    render: (h) => h(App),
+  }).$mount('#app')
+})
