@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'articles/index'
 
+  root 'articles#index'
+
   # Defines the root path route ("/")
   # root "posts#index"
   #

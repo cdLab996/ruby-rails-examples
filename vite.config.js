@@ -4,6 +4,7 @@ import RubyPlugin from 'vite-plugin-ruby'
 import FullReload from 'vite-plugin-full-reload'
 import VuePlugin from '@vitejs/plugin-vue2'
 import VuePluginJsx from '@vitejs/plugin-vue2-jsx'
+import UnoCSS from 'unocss/vite'
 
 export default defineConfig({
   plugins: [
@@ -11,6 +12,9 @@ export default defineConfig({
     FullReload(['config/routes.rb', 'app/views/**/*'], { delay: 200 }),
     VuePlugin(),
     VuePluginJsx({ compositionAPI: true }),
+    UnoCSS({
+      mode: 'vue-scoped',
+    }),
   ],
   resolve: {
     alias: {

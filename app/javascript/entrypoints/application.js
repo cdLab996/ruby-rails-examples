@@ -35,18 +35,17 @@ console.log(
 // Example: Import a stylesheet in app/frontend/index.css
 // import '~/index.css'
 
-// Vue.use(VueRouter);
 window.bus = new Vue()
 
-document.addEventListener('DOMContentLoaded', () => {
-  // window.WOOT = new Vue({
-  //   router,
-  //   components: { App },
-  //   template: '<App/>',
-  // }).$mount('#app')
+new Vue({
+  router,
+  render: (h) => h(App),
+}).$mount('#app')
 
-  new Vue({
-    router,
-    render: (h) => h(App),
-  }).$mount('#app')
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//   window.WOOT = new Vue({
+//     router,
+//     components: { App },
+//     template: '<App/>',
+//   }).$mount('#app')
+// })

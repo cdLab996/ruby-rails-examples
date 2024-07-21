@@ -8,6 +8,9 @@
     "pnpm": ">=9.1.1"
   },
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint ./src/**/*.{vue,ts,tsx}",
     "lint:fix": "eslint ./src/**/*.{vue,ts,tsx} --fix",
     "format": "prettier --check \"./src/**/*.{vue,ts,tsx}\"",
@@ -21,11 +24,11 @@
   "devDependencies": {
     "@cdlab996/eslint-config-vue2": "0.0.13",
     "@cdlab996/prettier-config": "0.0.13",
-    "@types/node": "20.14.10",
     "@vitejs/plugin-vue2": "2.3.1",
     "@vitejs/plugin-vue2-jsx": "1.1.1",
     "eslint": "8.57.0",
     "prettier": "3.3.2",
+    "unocss": "0.61.5",
     "vite": "5.3.3",
     "vite-plugin-full-reload": "1.2.0",
     "vite-plugin-ruby": "5.0.0"
